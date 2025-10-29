@@ -10,6 +10,13 @@ Sky Racer is a fast-paced flight game built for Reddit's Developer Platform (Dev
 
 **Built for:** Reddit Devvit Hackathon - Community Play Category
 
+## 📦 Version Note
+
+**Live Demo:** Running version 0.0.19 on r/sky_racer_game_dev  
+**Source Code:** This repository contains the latest development version with additional UI improvements
+
+The live demo is fully functional with all core features. The source code includes additional responsive design improvements and UI polish that will be deployed in future updates.
+
 ## ✨ Features
 
 - **Smooth Flight Physics** - Vertical movement with realistic controls
