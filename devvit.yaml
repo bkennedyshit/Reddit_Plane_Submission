@@ -1,0 +1,36 @@
+name: skyracergame
+version: 1.0.0
+description: Fly your jet through the city and compete for high scores on Reddit
+capabilities:
+  - reddit_api
+  - redis
+  - http
+  - media
+settings:
+  - name: game-difficulty
+    type: select
+    label: Game Difficulty
+    options:
+      - label: Easy
+        value: easy
+      - label: Medium
+        value: medium
+      - label: Hard
+        value: hard
+    default: medium
+  - name: enable-leaderboard
+    type: boolean
+    label: Enable Global Leaderboard
+    default: true
+menu:
+  - label: Play Sky Racer
+    location: post
+    for_user_type: logged_in
+triggers:
+  - event: PostSubmit
+    handler: onPostSubmit
+hooks:
+  - event: AppInstall
+    handler: onAppInstall
+  - event: AppUninstall
+    handler: onAppUninstall
